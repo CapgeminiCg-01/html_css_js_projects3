@@ -1,0 +1,64 @@
+<html>
+<head>
+</head>
+<body > 
+<script>
+        function Username(){
+		  var a = document.getElementById("customername").value;
+	      if(/[a-zA-Z-]{5,}/.test(a)) alert ("Nice Name!");
+		  else alert ("Minimum 5 Characters and only one special character allowed");
+		 }
+		
+	    function renttenure(){
+		  var b = parseInt(document.getElementById("renttenure").value);
+		  var c = parseInt(document.getElementById("availabletoys").value);
+		  var d = parseInt(document.getElementById("no.oftoys").value);
+	      
+		  if(b < 31 && !isNaN(b)) alert ("Rent Tenure is Ok");
+		  else alert("We cannot rent over 30 days SORRY!!!");
+		 
+   		  if(c < 6  && !isNaN(c)) alert ("Toys is Available");
+		  else alert ("Max Available toys is 5 ");
+		  
+		  if ( d > 0 && !isNaN(d) ) alert ("No. Of Toys is Ok");
+		  else alert("Please provide your correct no. of Toys!");
+         }
+		 
+	      function showrent(){
+		    var a = document.getElementById("customername").value;
+		 	var b = parseInt(document.getElementById("renttenure").value);
+		    var d = parseInt(document.getElementById("no.oftoys").value);
+			
+			rent = 100 * b * d ;
+			value = confirm("Rent for your toys: " + rent );
+			if(value== true) alert("Thank you for order " + a );
+		 }
+
+  </script>
+  
+  <h2 style = "background color : #000080; color : #ff6600; ">
+   <span style = "background color : #000080; color : #ff6600;">Rent Toys</span></h2>
+
+  <table>
+   <tbody>
+     <tr><td >Toy Name</td> <td><select name = "toyname">
+	 <option>Bicycle</option>
+	 <option>Train</option>
+	 <option>Doll</option>
+	 <option>Teddy Bear</option>
+	 <option>Kite</option>
+	 <option>Airplane</option>
+	 <option>Lego Mind storms</option>
+	 <option>Speak and Spell</option>
+	 </select></td></tr>
+     <tr><td >Customer Name</td><td><input type = "text" id = "customername" onblur = "Username()" /></td></tr>
+	 <tr><td >Rent Start Date</td><td><input type = "date" id = "rentdate" /></td></tr>
+	 <tr><td >Rent Tenure</td><td><input type = "text" id = "renttenure" onblur = "renttenure()" /></td></tr>
+	 <tr><td >Number of Toys Available</td><td><input type = "text" id = "availabletoys"  /></td></tr>
+	 <tr><td >Enter Number of Toys</td><td><input type = "text" id = "no.oftoys" /></td></tr>
+     <tr><td ></td><td><input type = "button" onclick = "showrent()" value= "Submit Query"/></td></tr>
+   </tbody>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<script src = Functions.js>
+</script>
+
+<script>
+  Greeting()
+  Greeting2()
+</script>
+ 
+ <html>
+ <head>
+ <title> Declare a Functions</title>
+ </head>
+ <body>
+      <h1> Declare a Functions</h1>
+   <div>
+      <h2>Today's Date is :</h2>
+	  <span id = "calendar"></span>
+   </div>
+ 
+  <script >
+   function showDate(){
+      var today = new Date();
+	  var myCalendar = document.getElementById("calendar");
+	  
+	  myCalendar.innerHTML = today.toDateString();
+    }
+      showDate()
+ </script>
+</body>
+</html>

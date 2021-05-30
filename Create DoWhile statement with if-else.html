@@ -1,0 +1,27 @@
+<html>
+<head> 
+ <title>My JavaScript Page</title>
+</head>
+
+<body>
+ <script>
+ var x = 0;
+  do{
+    x = window.prompt("What is my favourite number?",x);
+	
+	if (x == null)
+	break;
+	
+	if (Number(x) == x)
+	continue;
+	
+	window.alert("Please only enter in numbers!");
+   }
+   
+   while(x != 5){  
+	  if (x != 5) window.alert("You gave up!");
+	  else  window.alert("Correct Answer!");
+     }
+   </script>
+ </body>
+ </html>

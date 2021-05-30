@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Associate Array</title>
+<script>
+  
+  var myArray = {abc: 200, "x y z": 300};
+  
+  for(key in myArray){
+     alert("key " + key + " has value " + myArray[key]);
+	}
+	
+  var myArray = new Date();
+  myArray["a"] = 100;
+  myArray["b"] = 200;
+  alert(myArray["b"]);
+  
+  var myArray = [ 'one', 'two', 'three', 'four', 'five'];
+   document.writeln(myArray[2]) ;
+   
+  function passedByReference(refArray){
+     refArray[1] = 'changed' ;
+   }
+   passedByReference(myArray);
+   document.writeln(myArray[1]);
+   
+ // var myArray = [ 'one', 'two', 'three', 'four', 'five'];
+   var Array = myArray;
+   Array[1] = 'new value';
+   document.writeln(myArray[1]);
+   
+ </script>
+</head>
+
+<body>
+
+</body>
+</html>

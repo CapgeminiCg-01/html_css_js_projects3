@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Array Properties and Methods</title>
+</head>
+
+<body>
+<p id = "demo"></p>
+<script>
+ 
+  var fruits = ["Mango", "Ber", "Banana", "Chiku" ];
+  document.getElementById("demo").innerHTML = fruits.valueOf();    // valueOf method
+  
+  document.getElementById("demo").innerHTML = fruits.join(":");    // join method
+  
+  var obj = fruits.pop()    // Push and Pop methods
+  alert (obj)
+  fruits.push("Jamoon")
+  alert (fruits)
+ 
+  fruits.shift();            // shift and unshift methods
+  fruits.unshift("Apple");  
+  alert (fruits);
+  
+  fruits[2] = "Kiwi"        // Index method
+  alert(fruits);
+  
+  delete fruits[3];         // Delete method
+  alert(fruits);
+  
+  fruits.splice(1,0,"orange", "Mosambi")    // splice method
+  alert (fruits);
+  fruits.splice(0,1,"Papaya")
+  alert (fruits);
+  
+  fruits.sort();             // sort method
+  alert (fruits);
+  
+  fruits.reverse();           // reverse method
+  alert (fruits);
+   
+  var citrus = fruits.slice(1,3);          // slice method
+  alert(citrus);
+  
+  var Fruits = ["Mango", "Ber", "Banana", "Chiku" ];
+  var veggies = ["Brinjal", "Palak", "Lemon", "Capsicum"];
+  var arraylist = Fruits.concat(veggies);
+  alert(arraylist);
+ 
+ </script>
+</body>
+</html>

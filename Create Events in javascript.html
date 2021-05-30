@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Events</title>
+<script>
+  function Greeting(){
+      alert("Welcome to Javascript");
+	}
+  function count_rabbits(){
+      for(i=0 ; i<3 ; i++)
+      alert("Rabbit " + i + " out of the hat!" );
+	}
+	
+  function over(){ alert("Mouse Over"); }
+  function out(){ alert("Mouse Out"); }
+  
+</script>
+<body>
+    <input type = "button" onclick = "Greeting()" value = " Greetings"/>
+	<input type = "button" onclick = "count_rabbits()" value = " count_rabbits"/>
+	<input type = "button" onmouseover = "over()"  onmouseout = "out()" value = "Mouse Events"/>  
+	<div onmouseover = "over()"  onmouseout = "out()">
+	<h2>This is inside the division</h2> </div>
+</body>
+</html>

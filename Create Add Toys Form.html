@@ -1,0 +1,56 @@
+<html>
+<head>
+</head>
+<body > 
+<script>
+      function validate(){
+	      var a = document.getElementById("toyname").value;
+		  var b = document.getElementById("toytype").value;
+		  var c = parseInt(document.getElementById("minage").value);
+		  var d = parseInt(document.getElementById("maxage").value);
+		  var e = parseInt(document.getElementById("price").value);
+		  var f = parseInt(document.getElementById("qty").value);
+		  var g = parseInt(document.getElementById("rentalamt").value);
+		 
+		  
+	      if(/^[a-zA-Z0-9_-]{3,}$/.test(a)) alert ("Name Ok");
+		  else alert ("Please provide your correct toy name!");
+		  
+		  if(/^[a-zA-Z0-9_-]{5,}$/.test(b)) alert ("Type Ok");
+		  else alert ("Please provide your correct toy type!");
+		  
+		  if(c < 13 && !isNaN(c)) alert ("Min-Age is Ok");
+		  else alert ("Please provide correct Min-Age!");
+		  
+		  if(d < 13 && !isNaN(d)) alert ("Max-Age is Ok");
+		  else alert ("Please provide correct Max-Age!");
+		  
+		  if(e > 0 && !isNaN(e)) alert ("price is Ok");
+		  else alert ("Please provide correct price!");
+		  
+		  if(f > 0 && !isNaN(f)) alert ("Quantity is Ok");
+		  else alert ("Please provide correct Quantity!");
+		  
+		  if(g > 4 && !isNaN(g)) alert ("Amount is Ok");
+		  else alert ("Please provide correct rental amount!");
+		  
+		  
+	  }
+  </script>
+  
+  <h2 style = "background color : #000080; color : #ff6600; ">
+   <span style = "background color : #000080; color : #ff6600;"> Add Toys</span></h2>
+  <table>
+   <tbody>
+     <tr><td >Toy Name</td><td><input type = "text" id = "toyname" /></td></tr>
+     <tr><td >Toy type</td><td><input type = "text" id = "toytype" /></td></tr>
+	 <tr><td >Min-Age</td><td><input type = "text" id = "minage" /></td></tr>
+	 <tr><td >Max-Age</td><td><input type = "text" id = "maxage" /></td></tr>
+	 <tr><td >Price</td><td><input type = "text" id = "price" /></td></tr>
+	 <tr><td >Quantity Available in Stock</td><td><input type = "text" id = "qty" /></td></tr>
+	 <tr><td >Rental amount per day</td><td><input type = "text" id = "rentalamt" /></td></tr>
+     <tr><td ><input type = "button" onclick = "validate()" value= "Submit Query"/></td></tr>
+   </tbody>
+  </table>
+</body>
+</html>

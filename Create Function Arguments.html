@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Multiple Parameters</title>
+</head>
+<body>
+  <script>
+    function greeting(greetStr, number){
+	  if (number != parseInt(number)|| number <= 0 )
+	    number = 1;
+	  
+	  for(i=0 ; i<number ; i++) 
+	    document.write(greetStr + "<br/>");
+	}
+	
+    greeting("Hello", 5);
+	greeting("Goodbye");
+	greeting("HelloZero", 0);
+	greeting("HelloThreePointOne", 3.1);
+	greeting("HelloABC", "ABC");
+	greeting('HelloMinusTen', -10);
+	
+ </script>
+</body>
+</html>
+
+<script Language = "Javascript">
+   function rectangleArea(length, height){
+       var area;
+	   area = length * height * 3.14159;
+       return area;	   
+   }
+   function displayArea(){
+       var l , h, rectArea;
+	   l = 52.05;
+	   h = 46.55;
+	   rectArea = rectangleArea(l,h);
+	   document.write("The area of this ", rectArea);
+   }
+  </script>
+<script>
+  displayArea()
+</script>  

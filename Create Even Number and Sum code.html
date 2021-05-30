@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body onload = "Evensum()"> 
+ <h1>Display Even Number & Sum</h1>
+ <div id = "result"></div>
+ <script>
+      function Evensum(){
+	   var a=0; sum = 0; 
+	   while (a<21){
+	     sum = sum+a;
+		 a = a+2;
+	     }
+        document.getElementById("result").innerHTML = "Total:" + sum ;
+	  }
+ </script>
+</body>
+</html>

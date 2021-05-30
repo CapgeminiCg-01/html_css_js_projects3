@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Array Example</title>
+<script>
+  
+  var fruits = ['apple', 'orange', 'kiwi'];
+  alert (fruits[1]);
+  
+  var person = ["John", "Doe", 46, 657.234];
+  document.write(person + "<br/>");
+  
+  var x = [0,1,2,3,4,5];
+  var y =[x];
+  document.writeln(y[0][3]);
+  
+ // WAP to perform fibonacci series;
+ 
+ var myArray = new Array;
+ var maxNum = 100;
+ var a = 0;
+ var b = 0;
+ var c = 1;
+ while (c < maxNum){
+         myArray[myArray.length] = c;
+		 a = b;
+		 b = c;
+		 c = a+b;
+		}
+	alert ("Fibonacci Series :" + myArray);
+ 
+ </script>
+</head>
+
+<body>
+
+</body>
+</html>
